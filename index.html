@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FreshCart - Organic Food Store</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">FreshCart</div>
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#products">Products</a>
+                                <div class="dropdown-content">
+                                    <a href="#fruits">Fruits</a>
+                                    <a href="#vegetables">Vegetables</a>
+                                    <a href="#dairy">Dairy</a>
+                                    <a href="#bakery">Bakery</a>
+                                </div>
+                            </li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search products...">
+                        <button>Search</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Fresh Organic Food for a Healthier You</h1>
+                        
+                        <p>Discover the taste of nature with our handpicked organic products.</p>
+                        <a href="#products" class="btn">Shop Now</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Organic vegetables">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products" id="products">
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="sort-dropdown">
+                    <select id="sort-select">
+                        <option value="default">Sort by</option>
+                        <option value="price-low-high">Price: Low to High</option>
+                        <option value="price-high-low">Price: High to Low</option>
+                        <option value="name-a-z">Name: A to Z</option>
+                        <option value="name-z-a">Name: Z to A</option>
+                    </select>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Organic Apples">
+                        </div>
+                        <div class="product-info">
+                            <h3>Organic Apples</h3>
+                            <p>$2.99 / lb</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Organic Carrots">
+                        </div>
+                        <div class="product-info">
+                            <h3>Organic Carrots</h3>
+                            <p>$1.99 / lb</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1603833665858-e61d17a86224?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
+                                alt="Organic Strawberries">
+                        </div>
+                        <div class="product-info">
+                            <h3>Organic Strawberries</h3>
+                            <p>$3.99 / lb</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Organic Avocados">
+                        </div>
+                        <div class="product-info">
+                            <h3>Organic Avocados</h3>
+                            <p>$2.49 each</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title">Shop by Category</h2>
+                <div class="swiper-container category-carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide category-card">
+                            <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Fruits">
+                            <h3>Fruits</h3>
+                        </div>
+                        <div class="swiper-slide category-card">
+                            <img src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+                                alt="Vegetables">
+                            <h3>Vegetables</h3>
+                        </div>
+                        <div class="swiper-slide category-card">
+                            <img src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Dairy">
+                            <h3>Dairy</h3>
+                        </div>
+                        <div class="swiper-slide category-card">
+                            <img src="https://images.unsplash.com/photo-1621956838481-f8f616950454?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Bakery">
+                            <h3>Bakery</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Organic farmer">
+                    </div>
+                    <div class="about-text">
+                        <h2>Our Commitment to Quality</h2>
+                        <p>At FreshCart, we believe in providing our customers with the freshest, highest-quality
+                            organic produce available. Our team works directly with local farmers to ensure that every
+                            fruit and vegetable meets our strict standards for taste, nutrition, and sustainability.</p>
+                        <p>By choosing FreshCart, you're not just making a healthier choice for yourself and your family
+                            – you're also supporting sustainable farming practices and local communities.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="container">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <div class="swiper-container testimonial-carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonial-slide">
+                            <p>"FreshCart has transformed the way I shop for groceries. The quality of their organic
+                                produce is unmatched, and I love knowing that I'm supporting local farmers with every
+                                purchase."</p>
+                            <div class="testimonial-author">- Sarah Johnson, Happy Customer</div>
+                        </div>
+                        <div class="swiper-slide testimonial-slide">
+                            <p>"I've been a loyal customer of FreshCart for over a year now, and I couldn't be happier.
+                                The freshness and taste of their products are simply amazing!"</p>
+                            <div class="testimonial-author">- Mike Thompson, Satisfied Shopper</div>
+                        </div>
+                        <div class="swiper-slide testimonial-slide">
+                            <p>"As a health-conscious parent, I appreciate the wide variety of organic options FreshCart
+                                offers. It's made feeding my family nutritious meals so much easier."</p>
+                            <div class="testimonial-author">- Emily Rodriguez, Busy Mom</div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p>123 Organic Lane<br>Greenville, CA 90210<br>Phone: (555) 123-4567<br>Email:
+                            info@freshcart.com</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                        <form>
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>
