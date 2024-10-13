@@ -72,7 +72,7 @@ nav ul li a {
 }
 .search-bar button {
   padding: 5px 10px;
-  background-color: #4caf50;
+  background-color: #45cc49;
   color: white;
   border: none;
   border-radius: 0 5px 5px 0;
@@ -81,7 +81,7 @@ nav ul li a {
 
 /* Hero section styles */
 .hero {
-  background-color: #e8f5e9;
+  background-color: #eaf8f7;
   padding: 60px 0;
 }
 .hero-content {
